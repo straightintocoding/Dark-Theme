@@ -1,0 +1,105 @@
+:root {
+  --dark: #201029;
+  --dark1: #18112e;
+  --bgcolor: rgb(214, 214, 214);
+  --white: #fbfbfb;
+  --btn: rgb(255, 80, 80);
+  --bg: var(--bgcolor);
+  --textcolor: var(--dark);
+}
+
+.dark {
+  --bg: var(--dark);
+  --textcolor: var(--white);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  transition: 0.5s ease;
+}
+a {
+  text-decoration: none;
+}
+
+.toggle {
+  background-color: var(--btn);
+  color: var(--white);
+  width: fit-content;
+  padding: 6px 20px;
+  cursor: pointer;
+}
+.logo a {
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: var(--textcolor);
+  font-size: 30px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+}
+
+.navlinks {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navlinks a {
+  color: var(--textcolor);
+  font-weight: bold;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  min-height: 80vh;
+  width: 100vw;
+  place-items: center;
+}
+
+.mainContent {
+  display: flex;
+  min-height: 30vh;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 600px;
+  height: auto;
+  color: var(--textcolor);
+}
+
+.mainContent h1 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.mainContent p {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.mainContent a {
+  width: fit-content;
+  background-color: var(--btn);
+  color: var(--textcolor);
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--white);
+}
+
+img {
+  width: 500px;
+  height: auto;
+  border-radius: 15px;
+}
